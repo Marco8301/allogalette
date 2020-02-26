@@ -11,15 +11,14 @@ include('../utilities/header.php')
             <h1>Que des galettes, pas de saucisses !</h1>
             <div></div>
         </section>
-    <main style="display:flex; justify-content: center; align-items: center; padding-bottom:50px;">
-        <div >
+    <main style="display:flex; justify-content: center; align-items: center; padding-bottom:10px;">
+        <div>
             <a id="previous" class="navbtn"><</a>
         </div>
 
         <input type="hidden" name="date" id="coucou" value="default">
         <input type="hidden" name="heure" id="coucou2" value="default">
         <input type="hidden" name="idplanning" id="coucou3" value="default">
-
 
         <div id="containerPlanning" style="margin-top: 10px; width:500px; text-align:center;">
 
@@ -163,12 +162,10 @@ include('../utilities/header.php')
         <div>
             <a id="next" class="navbtn">></a>
         </div>
-        <input type="submit" value="Sélectionner" style="position:absolute; left:50%; margin-left:-90px; background-color:grey; bottom:-7.5%;" id="button" disabled>
 
-</form>
-    </main>
-
-
+    </main> 
+    <input type="submit" value="Suivant" style=" display:block; width: 150px; margin: 0 auto; margin-bottom:10px; background-color:grey;" id="button" disabled>
+</form> 
 
 
     <script src="../js/script.js"></script>
