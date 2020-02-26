@@ -33,6 +33,20 @@ header {
     background-color:white;
     border:1px solid grey;
     height:80px;
+    transition: height 0.2s;
+    padding-top: 10px;
+}
+
+#myHeader {
+    position:sticky;
+    top:0;
+    z-index:99999;
+}
+
+.is-shrinkable {
+    height : 50px;
+    /* width : 10%; */
+    padding-top : 0px;
 }
 
 .header-container {
@@ -136,10 +150,15 @@ img {
     margin:0 auto 50px;
 }
 
+#linkLogo {
+    transition: width 0.2s;
+}
+
 #imglogo {
     margin:0;
-    width:20%;
+    /* width:20%; */
     height:20%;
+    transition: width 0.2s;
 }
 
 #index-container {
@@ -275,6 +294,8 @@ tr td {
 
 footer {
     height: 10vh;
+    background-color:white;
+    border:1px solid silver;
 }
 
 

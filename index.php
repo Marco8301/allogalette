@@ -1,8 +1,3 @@
-<?php
-
-var_dump($_SERVER);
-
-?>
 
 <!DOCTYPE html>
 <html lang="fr">
@@ -63,9 +58,9 @@ var_dump($_SERVER);
 
     </main>
 
-    <footer>
-        <small>Allogalette est un service proposé par Marc-Antoine Malaspina</small>
-    </footer>
+<?php 
+include("utilities/footer.php");
+?>
 
 
 

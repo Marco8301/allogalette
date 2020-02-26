@@ -85,12 +85,9 @@ include('../utilities/header.php')
 
     </main>
 
-    <footer>
-        <!-- <p>C'est la partie privée du site</p>
-        <button>
-            <a href="logout.php">logout</a>
-        </button> -->
-    </footer>
+    <?php 
+        include("../utilities/footer.php");
+    ?>
     <script src="../js/script.js"></script>
 
 </body>

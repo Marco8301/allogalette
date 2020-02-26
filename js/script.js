@@ -19,6 +19,35 @@ if (navigator.geolocation) {
     })
 }
 
+// Code qui gère le changement de taille du headerheader
+
+
+var header = document.getElementById('myHeader');
+var linkLogo = document.getElementById('linkLogo');
+var sticky = header.offsetTop;
+
+window.addEventListener("scroll", myFunction);
+
+// Autre manière de l'écrire :
+// window.onscroll = function () { myFunction() };
+
+
+function myFunction() {
+
+    if (window.pageYOffset > sticky && window.innerWidth >= 640) {
+        linkLogo.style.width = "10%";
+        header.classList.add("is-shrinkable");
+    } else {
+        linkLogo.style.width = "20%"
+        header.classList.remove("is-shrinkable");
+    }
+}
+
+
+
+
+
+
 // Code qui gère la page planning
 let prev = document.getElementById('previous');
 let next = document.getElementById('next');
@@ -47,8 +76,6 @@ function uncheck(el) {
 }
 
 $(function () {
-
-
 
     prev.addEventListener('click', function (event) {
         if (i > 0) {

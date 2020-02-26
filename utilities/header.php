@@ -12,10 +12,10 @@
 </head>
 <body>
 
-<header style="position:sticky; top:0; z-index:99999;">
+<header id="myHeader" >
 <div class="header-container">
-    <img id="imglogo" src="../img/new-logo-hallo.png" alt="logo">
-    <p> Zone de livraison : <span id="zoneLivraison">Impossible de géolocaliser</span></p>
+    <a id="linkLogo" href="http://localhost:8888/allogalette-master" style="width:20%;"><img id="imglogo" src="../img/new-logo-hallo.png" alt="logo"></a>
+    <p style="font-weight:bold;"> Zone de livraison : <span id="zoneLivraison" style="font-weight:normal;">Impossible de géolocaliser</span></p>
 </div>
 </header>
 

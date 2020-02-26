@@ -11,7 +11,7 @@ include('../utilities/header.php')
             <h1>Que des galettes, pas de saucisses !</h1>
             <div></div>
         </section>
-    <main style="display:flex; justify-content: center; align-items: center;">
+    <main style="display:flex; justify-content: center; align-items: center; padding-bottom:50px;">
         <div >
             <a id="previous" class="navbtn"><</a>
         </div>
@@ -163,21 +163,18 @@ include('../utilities/header.php')
         <div>
             <a id="next" class="navbtn">></a>
         </div>
+        <input type="submit" value="Sélectionner" style="position:absolute; left:50%; margin-left:-90px; background-color:grey; bottom:-7.5%;" id="button" disabled>
 
+</form>
     </main>
-    <input type="submit" value="Sélectionner" style="position:absolute; left:50%; margin-left:-90px; background-color:grey;" id="button" disabled>
 
-    </form>
 
-    <footer>
-        <!-- <p>C'est la partie privée du site</p>
-        <button>
-            <a href="logout.php">logout</a>
-        </button> -->
-    </footer>
+
 
     <script src="../js/script.js"></script>
-
+    <?php 
+        include("../utilities/footer.php");
+    ?>
 
 </body>
 <?php 
